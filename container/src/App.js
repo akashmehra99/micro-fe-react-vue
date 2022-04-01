@@ -6,6 +6,7 @@ import {
 } from "@material-ui/core/styles";
 
 import { MarketingApp } from "./components/MarketingApp";
+import { AuthApp } from "./components/AuthApp";
 import Header from "./components/Header";
 
 const generateClassName = createGenerateClassName({
@@ -18,6 +19,7 @@ export const App = () => {
       <StylesProvider generateClassName={generateClassName}>
         <div>
           <Header />
+          <AuthApp />
           <MarketingApp />
         </div>
       </StylesProvider>
